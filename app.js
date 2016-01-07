@@ -15,7 +15,7 @@
     } else{
       alert('Err....Nope! Jumped off a perfectly good plane 10 years ago in Australia, mate.');
     }
-      alert('You got '+ counter +' correct!');
+      alert('You got '+ counter +'/1 correct!');
 
   var ans2 = prompt('Is black licorice my favorite thing on earth?').toUpperCase();
       console.log('The user answered answer 2: '+ ans2);
@@ -26,7 +26,7 @@
       alert('Correct!! You know me so well,  '+ user +'. I loathe the stuff!');
       counter++;
 }
-  alert('You got '+ counter +' correct!');
+  alert('You got '+ counter +'/2 correct!');
 
   var ans3 = prompt('Have I seen the new Star Wars movie?').toUpperCase();
     console.log('The user answered answer 3: '+ ans3);
@@ -36,28 +36,34 @@
     }else {
       alert('False! I am probably the only person who hasn\'t seen it yet. Want to watch it with me, '+ user +'?');
     }
-    alert('You got '+ counter +' correct!');
+    alert('You got '+ counter +'/3 correct!');
 
+var responseto4 = false;
+while(responseto4 === false) {
   var ans4 = prompt('How old do I look?');
     console.log('The user answered answer 4: '+ ans4);
     if(parseInt(ans4) == 33){
       alert('Correct! You know me the best!!!');
+      responseto4 = true;
         counter++;
     }else if (parseInt(ans4) > 33){
-     alert('I\'m not that old, '+ user +'!!');
+     alert('I\'m not that old, '+ user +'!! Try again..');
+      responseto4 = false;
    }else {
-     alert('That\'s sweet of you, '+ user +'! I am a little older though');
+     alert('That\'s sweet of you, '+ user +'! I am a little older though Try again..');
+     responseto4 = false;
 
    }
-   alert('You got '+ counter +' correct!');
-   
+ }
+   alert('You got '+ counter +'/4 correct!');
+
    var responseto5 = false;
     while(responseto5 === false){
 
    var ans5 = prompt('What is my favorite number?');
     console.log('The user answered answer 5: '+ ans5);
       if (parseInt(ans5) == 22){
-        alert('Correct! Are you a psychic?');
+        alert('Correct! You rock!');
         responseto5 = true;
         counter++;
 
@@ -71,4 +77,12 @@
         }
 
     }
-    alert('You got '+ counter +'/5 correct!');
+    if(counter = 5){
+      alert('High five! ' + counter + '/5!! Woo hoo!')
+    }else if (counter < 2){
+    alert('I thought we were friends...'+ counter + '/5...');
+    } else {
+    alert('You got '+ counter + '/5');
+
+
+  }
