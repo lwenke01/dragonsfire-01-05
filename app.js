@@ -1,7 +1,7 @@
 
 
 
-    var user= prompt('What is your name?');
+    var user = prompt('What is your name?');
       console.log('The user\'s name is '+ user);
 
     var counter = 0;
@@ -9,20 +9,20 @@
 
   var ans1 = prompt('Let\'s get started, '+ user +'! Please answer only yes or no. Have I ever been skydiving?').toUpperCase();
       console.log('The user answered answer 1: '+ ans1);
-    if(ans1 ==='Y'|| ans1 ==='YES'){
+    if(ans1 === 'Y'|| ans1 === 'YES'){
       alert('Correct! I went skydiving 10 years ago over the Great Barrier in Australia!');
         counter++;
-    } else{
+    } else {
       alert('Err....Nope! Jumped off a perfectly good plane 10 years ago in Australia, mate.');
     }
       alert('You got '+ counter +'/1 correct!');
 
   var ans2 = prompt('Is black licorice my favorite thing on earth?').toUpperCase();
       console.log('The user answered answer 2: '+ ans2);
-    if(ans2 ==='Y'|| ans2 ==='YES'){
+    if(ans2 === 'Y'|| ans2 === 'YES'){
       alert('No way!, '+ user + '. That stuff is nasty!');
 
-    }else {
+    } else {
       alert('Correct!! You know me so well,  '+ user +'. I loathe the stuff!');
       counter++;
 }
@@ -33,7 +33,7 @@
     if(ans3 === 'N'||ans3 === 'NO'){
       alert('True. Want to watch it with me, '+ user +'?');
         counter++;
-    }else {
+    } else {
       alert('False! I am probably the only person who hasn\'t seen it yet. Want to watch it with me, '+ user +'?');
     }
     alert('You got '+ counter +'/3 correct!');
