@@ -1,0 +1,13 @@
+
+.right {
+  color: green;
+  float: center;
+  border-color: green;
+  border-width: 20px;
+  border: solid;
+  border-radius: 15px;
+}
+
+.wrong {
+  color: red;
+}

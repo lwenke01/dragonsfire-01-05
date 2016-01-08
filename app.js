@@ -25,9 +25,11 @@ function questions(){
     if(ans1 === quesData[i][1] || ans1 === quesData[i][2]){
       // alert('Correct! I went skydiving 10 years ago over the Great Barrier in Australia!');
       quesData[i][7].textContent = quesData[i][5];
+      quesData[i][7].className = 'right';
       counter++;
     } else {
       quesData[i][7].textContent = quesData[i][6];
+      quesData[i][7].className = 'wrong';
       // alert('Err....Nope! Jumped off a perfectly good plane 10 years ago in Australia, mate.');
       // res1.textContent = 'Err....Nope! Jumped off a perfectly good plane 10 years ago in Australia, mate.';
     }
@@ -106,15 +108,18 @@ while(responseto4 === false) {
     if(parseInt(ans4) == 33){
       // alert('Correct! You know me the best!!!');
       res4.textContent = 'Correct! You know me the best!!!';
+      res4.className = 'right';
       responseto4 = true;
         counter++;
     } else if (parseInt(ans4) > 33){
     //  alert('I\'m not that old, '+ user +'!! Try again..');
      res4.textContent = 'I\'m not that old, '+ user +'!! Try again..';
+     res4.className = 'wrong';
       responseto4 = false;
       } else {
         // alert('That\'s sweet of you, '+ user +'! I am a little older though Try again..');
         res4.textContent = 'That\'s sweet of you, '+ user +'! I am a little older though Try again..';
+        res4.className = 'wrong';
         responseto4 = false;
 
    }
@@ -132,15 +137,18 @@ while(responseto4 === false) {
   if (parseInt(ans5) == 22){
         // alert('Correct! You rock!');
         res5.textContent = 'Correct! You rock!';
+        res5.className = 'right';
         responseto5 = true;
         counter++;
     } else if (parseInt(ans5)< 22){
       // alert('Too low. Try again!');
       res5.textContent = 'Too low. Try again!';
+      res5.className = 'wrong';
         responseto5 = false;
       } else {
           // alert('Too high. Keep guessing');
           res5.textContent = 'Too high. Keep guessing';
+          res5.className = 'wrong';
           responseto5 = false;
       }
     }
